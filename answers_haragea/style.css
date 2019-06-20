@@ -1,0 +1,166 @@
+/* Header Task */
+
+header {
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    top: 0;
+}
+
+.first-heading {
+    margin-top: 200px;
+}
+
+/* List Task */
+
+.blue {
+    color: blue;
+}
+
+/* Images Task */
+
+.background {
+    width: 500px;
+    height: 300px;
+    background-image: url(images/tree.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.row-images {
+    display: flex;
+    flex-direction: row;
+}
+
+img[alt="Image 2"] {
+    padding: 20px;
+    border: 5px solid blue;
+}
+
+/* nth-child Task */
+
+span:nth-child(even) {
+    background: blue;
+}
+
+/* MediaQuery Task */
+
+.mediaquery {
+    background: blue;
+    width: 5rem;
+    height: 5rem;
+}
+
+@media (min-width: 767.98px) {
+    .mediaquery {
+        background:yellow;
+        width: 7rem;
+        height: 7rem;
+    }
+} 
+
+@media (min-width: 1023.98px) {
+    .mediaquery {
+        background: red;
+        width: 10rem;
+        height: 10rem;
+    }
+} 
+
+@media (min-width: 1439.98px) {
+    .mediaquery {
+        background: purple;
+        width: 12rem;
+        height: 12rem;
+    }
+} 
+
+/* Positioning Task */
+
+.box {
+    height: 40rem;
+    width: 40rem;
+}
+.relative {
+    width: 20rem;
+    height: 20rem;
+    position: relative;
+    left: 50%;
+}
+.absolute {
+    height: 10rem;
+    width: 10rem;
+    position: absolute;
+    bottom: 0;
+}
+
+/* Flexbox Task */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.row-two {
+    flex-grow: 1;
+}
+
+/* Grid Task */
+
+.cell {
+    border: 2px black solid;
+}
+
+.wrapper {
+    justify-content: center;
+    padding: 5px;
+    border: 5px solid blue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.two {
+    grid-row: 2/4;
+}
+
+.three {
+    grid-row: 1/3;
+    grid-column: 2/4;
+}
+
+.seven {
+    border: dotted 2px black;
+    grid-column: 2/4;
+    grid-row: 2/4;
+}
+
+
+
+
+
+/* Three Headings with different font color, font size and font family */
+
+.three-headings {
+    color: tomato;
+    font-size: 5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Footer Task */
+
+footer a {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+footer a:visited {
+    color: green;
+}
+
+footer a:hover {
+    color: yellow;
+}
